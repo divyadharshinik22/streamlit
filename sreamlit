@@ -1,0 +1,54 @@
+# streamlit
+import streamlit as st
+import pandas as pd
+
+st.header(":red[Chennai's Pride]:sunglasses:",divider='orange')
+
+st.subheader ('How is chennai famous for ?')
+  
+st.write(
+  '''_Chennai_, The capital of Tamilnadu is famous for its rich
+  culture, history, and modern development. It is known as 
+  the "Gateway to South India" and has a blend of tradition
+  and modernity.
+''')
+
+st.subheader(" 1. Culture & Heritage")
+
+data_frame = pd.DataFrame({ 
+  'Category': ['Temples & Monuments','Classical Arts','Festivals'],
+  'Details':['Kapaleeshwarar Temple,Fort St.George','Bharatanatyam,Carnatic Music','Pogal,Music Season,Margazhi Festival']
+  
+})
+
+st.write(data_frame)
+
+st.subheader('2. Tourist Attractions')
+
+data_frame = pd.DataFrame({
+   'Place': ['Marina Beach','Santhome Basilica','Mahabalipuram'],
+   'Famous For': ['Second-longest urban beach','Historic Church','UNESCO Heritage Site']
+
+   })
+
+st.write(data_frame)
+
+st.subheader('3. Food & Cuisine')
+
+data_frame = pd.DataFrame({
+  'Dish': ['Idli,Dosa,Vada','Filter Coffee','Chettinad Cuisine'],
+  'Specialty': ['South Indian Breakfast','Strong, aromatic coffee','Spicy non-veg delicacies']
+
+})
+
+st.write(data_frame)
+
+st.subheader('4. Economy & Education')
+
+data_frame = pd.DataFrame({
+    'Sector': ['IT & Business','Film Industry','Education'],
+    'Importance': ['ZOHO,TCS,Infosys','Kollywood,Tamil cinema','IIT Madras,Anna University']
+
+})
+
+st.write(data_frame)
